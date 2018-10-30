@@ -5,9 +5,15 @@ This is a minimal debian stretch image with kernel 4.18.6 for the BananaPi M2 Ze
 It's based on this project: https://github.com/avafinger/bananapi-zero-ubuntu-base-minimal  
 I just exchanged the rootfs and copied the necessary firmware and kernel modules to it.
 
+At first you have to create the rootfs_4.18.6.tar.gz archive:  
+
+  cat rootfs_4.18.6.tar.gz* > rootfs_4.18.6.tar.gz
+  
+  
 To flash the image to your card you have to run:  
   
   sudo ./flash_sdcard.sh /dev/"your sd card reader"  
+  
 
 The following packages are installed:  
 opennsh-server  
