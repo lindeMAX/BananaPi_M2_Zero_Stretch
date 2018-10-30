@@ -6,13 +6,13 @@ It's based on this project: https://github.com/avafinger/bananapi-zero-ubuntu-ba
 I just exchanged the rootfs and copied the necessary firmware and kernel modules to it.
 
 At first you have to create the rootfs_4.18.6.tar.gz archive:  
-
-  **cat rootfs_4.18.6.tar.gz* > rootfs_4.18.6.tar.gz**
+  
+ __cat rootfs_4.18.6.tar.gz* > rootfs_4.18.6.tar.gz__  
   
   
 To flash the image to your card you have to run:  
   
-  **sudo ./flash_sdcard.sh /dev/"your sd card reader"  **
+  __sudo ./flash_sdcard.sh /dev/"your sd card reader"__  
   
 
 The following packages are installed:  
@@ -34,7 +34,7 @@ So you can login and see boot and kernel message using the Debug UART.
 E.g. using an Arduino and minicom (minicom -D /dev/ttyACM0 -b 115200).  
 
 To login you can use:  
-user: **root**, pw: **root**  
+user: __root__, pw: __root__  
 or  
-user: **user**, pw: **user**
+user: __user__, pw: __user__
 
